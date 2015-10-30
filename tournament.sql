@@ -10,6 +10,5 @@ CREATE DATABASE tournament;
 \c tournament;
 
 CREATE TABLE Players ( player_id SERIAL PRIMARY KEY, name TEXT, player_wins integer DEFAULT 0, player_matches integer DEFAULT 0);
-
 CREATE TABLE Matches ( Match_id SERIAL, winner_id integer references Players(player_id) ,loser_id integer references Players(player_id));
 
