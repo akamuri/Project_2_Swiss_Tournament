@@ -5,8 +5,6 @@
 
 import psycopg2
 
-
-
 def connect():
     """Connect to the PostgreSQL database.  Returns a database connection."""
     return psycopg2.connect("dbname=tournament")
@@ -52,12 +50,11 @@ def countPlayers():
 
 def registerPlayer(name):
     """Adds a player to the tournament database.
-
     The database assigns a unique serial id number for the player.  (This
     should be handled by your SQL database schema, not in your Python code.)
-
     Args: 
     name: the player's full name (need not be unique).
+    
     Executed INSERT into players table, %s allows the Query to understand 'name'.
     """
     DB = connect()
@@ -98,7 +95,6 @@ def reportMatch(winner, loser):
       winner:  the id number of the player who won
       loser:  the id number of the player who lost
 
-
     The SQL Query UPDATE the 'Players' and 'Matches' tables with winner and loser infromation.
     """
     DB = connect()
@@ -111,7 +107,6 @@ def reportMatch(winner, loser):
 
 
 def swissPairings():    
-
     """Returns a list of pairs of players for the next round of a match.
   
     Assuming that there are an even number of players registered, each player
