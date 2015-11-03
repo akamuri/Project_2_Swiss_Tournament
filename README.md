@@ -8,9 +8,13 @@ play against a player that has about same number of wins as them in the next rou
 
 SETUP NOTES
 -----------
+
+1. Getting Started 
 - Install Vagrant(http://vagrantup.com/) and VirtualBox (https://www.virtualbox.org/)
-- Clone the fullstack-nanodegree-vm repository (http://github.com/udacity/fullstack-nanodegree-vm)
+- First, fork the fullstack-nanodegree-vm repository (http://github.com/udacity/fullstack-nanodegree-vm)
 - Launch the Vagrant VM
+- Next clone your fullstack-nanodegree-vm repo to your local machine. 
+- 
 - Use tournament.sql to create the Datbase
 - tournament_test.py can be used to test everthing it setup correctly.
 
