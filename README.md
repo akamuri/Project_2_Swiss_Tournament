@@ -15,7 +15,7 @@ SETUP NOTES
 - Launch the Vagrant VM
 - Next clone your fullstack-nanodegree-vm repo to your local machine. 
 - 
-- Use tournament.sql to create the Datbase
+- To build and access the database run psql followed by \i tournament.sql
 - tournament_test.py can be used to test everthing it setup correctly.
 
 GENERAL USAGE NOTES
