@@ -8,14 +8,10 @@ play against a player that has about same number of wins as them in the next rou
 
 SETUP NOTES
 -----------
-
-1. Getting Started 
 - Install Vagrant(http://vagrantup.com/) and VirtualBox (https://www.virtualbox.org/)
-- First, fork the fullstack-nanodegree-vm repository (http://github.com/udacity/fullstack-nanodegree-vm)
-- Launch the Vagrant VM
-- Next clone your fullstack-nanodegree-vm repo to your local machine. 
-- 
-- To build and access the database run psql followed by \i tournament.sql
+- First, fork the fullstack-nanodegree-vm repository (https://github.com/akamuri/Project_2_Swiss_Tournament)
+- Launch the Vagrant VM :Use the command vagrant up (powers on the virtual machine) followed by vagrant ssh (logs into the virtual machine). Remember, once you have executed the vagrant ssh command, you will want to cd /vagrant to change directory to the synced folders in order to work on your project
+- To build and access the database run psql followed by \i tournament.sql, this will create the tournament database and also create the tables. 
 - tournament_test.py can be used to test everthing it setup correctly.
 
 GENERAL USAGE NOTES
